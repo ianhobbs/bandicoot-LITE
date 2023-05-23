@@ -4,8 +4,20 @@
   "description": "",
   "main": "blyth.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "use19" : "nvm use 19",
+    "blyth": "blyth tokens && scp /Users/ianhobbs/Sites/bandicoot-LITE/sass/lib/_tokens.css /Users/ianhobbs/Sites/bandicoot-LITE/sass/lib/_tokens.scss && speak done",
+    "utility": "blyth utility add auto-grid && blyth utility add flow && blyth utility add breakout-button && blyth utility add split-child"
   },
+
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+
+  "bin": {
+    "blyth": "node_modules/@bly-th/css/src/index.js"
+  },
+
+  "blyth": {
+    "tokensOutputPath": "sass/lib/_tokens.css",
+    "utilityOutputPath": "sass/lib/utility"
+  }
 }
